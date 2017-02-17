@@ -1,7 +1,7 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Catmandu interface to L<Adlib|http://www.adlibsoft.nl/>",
    "author" : [
-      "Pieter De Praetere <pieter.de.praetere@helptux.be>"
+      "Pieter De Praetere <pieter@packed.be>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Milla version v1.0.17, Dist::Zilla version 6.008, CPAN::Meta::Converter version 2.150010",
@@ -47,6 +47,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/thedatahub/Catmandu-Adlib/issues"
+      },
+      "homepage" : "https://github.com/thedatahub/Catmandu-Adlib",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/thedatahub/Catmandu-Adlib.git",
+         "web" : "https://github.com/thedatahub/Catmandu-Adlib"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0217"
 }

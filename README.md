@@ -1,22 +1,34 @@
 # NAME
 
-Catmandu::Adlib - Blah blah blah
+Catmandu::Adlib - Catmandu interface to [Adlib](http://www.adlibsoft.nl/)
 
 # SYNOPSIS
 
-    use Catmandu::Adlib;
+    # From the command line
+    catmandu export Adlib to YAML --id 1234 --endpoint http://test2.adlibsoft.com --username foo --password bar --database collect.inf
 
-# DESCRIPTION
+    # From a Catmandu Fix
+    lookup_in_store(
+      object_priref,
+      Adlib,
+      endpoint: http://test2.adlibsoft.com,
+      username: foo,
+      password: bar,
+      database: collect.inf
+    )
 
-Catmandu::Adlib is
+# MODULES
+
+- [Catmandu::Store::Adlib](https://metacpan.org/pod/Catmandu::Store::Adlib)
+- [Catmandu::Adlib::API](https://metacpan.org/pod/Catmandu::Adlib::API)
 
 # AUTHOR
 
-Pieter De Praetere <pieter.de.praetere@helptux.be>
+Pieter De Praetere <pieter@packed.be>
 
 # COPYRIGHT
 
-Copyright 2017- Pieter De Praetere
+Copyright 2017- PACKED vzw, VKC vzw
 
 # LICENSE
 

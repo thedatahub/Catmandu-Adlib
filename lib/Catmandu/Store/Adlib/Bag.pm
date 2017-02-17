@@ -46,7 +46,7 @@ sub each {
     my $new_start;
     while (my $item = pop @{$stack}) {
         if (scalar @{$stack} == 0) {
-            # Stack is empty; support paging
+            # Stack is empty; add the next page
             $new_start = $start + $limit;
             if ($new_start <= $hits) {
                 $list = $self->api->list($new_start);
@@ -67,7 +67,7 @@ sub each {
 
 sub get {
     my ($self, $id) = @_;
-    return $self->api->get_by_object_number($id);
+    return $self->api->get_by_priref($id);
 }
 
 sub add {

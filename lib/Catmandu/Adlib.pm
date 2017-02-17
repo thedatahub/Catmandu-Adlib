@@ -11,15 +11,32 @@ __END__
 
 =head1 NAME
 
-Catmandu::Adlib - Catmandu module for L<Adlib|>
+Catmandu::Adlib - Catmandu interface to L<Adlib|http://www.adlibsoft.nl/>
 
 =head1 SYNOPSIS
 
-  use Catmandu::Adlib;
+    # From the command line
+    catmandu export Adlib to YAML --id 1234 --endpoint http://test2.adlibsoft.com --username foo --password bar --database collect.inf
 
-=head1 DESCRIPTION
+    # From a Catmandu Fix
+    lookup_in_store(
+      object_priref,
+      Adlib,
+      endpoint: http://test2.adlibsoft.com,
+      username: foo,
+      password: bar,
+      database: collect.inf
+    )
 
-Catmandu::Adlib is
+=head1 MODULES
+
+=over
+
+=item L<Catmandu::Store::Adlib>
+
+=item L<Catmandu::Adlib::API>
+
+=back
 
 =head1 AUTHOR
 
