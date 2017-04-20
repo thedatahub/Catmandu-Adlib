@@ -4,7 +4,7 @@
       "Pieter De Praetere <pieter@packed.be>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.17, Dist::Zilla version 6.008, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Dist::Milla version v1.0.17, Dist::Zilla version 6.009, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -58,7 +58,11 @@
          "web" : "https://github.com/thedatahub/Catmandu-Adlib"
       }
    },
-   "version" : "0.01",
-   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0217"
+   "version" : "0.02",
+   "x_contributors" : [
+      "Matthias Vandermaesen <matthias@colada.be>",
+      "Pieter De Praetere <pieter.de.praetere@helptux.be>"
+   ],
+   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0231"
 }
 
